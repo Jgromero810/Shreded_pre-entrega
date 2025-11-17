@@ -1,0 +1,344 @@
+@font-face{
+	font-family:Skatenow;
+	src:url("fuentes/Skatenow FREE.ttf");
+}
+
+@font-face{
+	font-family:Skater Squad Personal Use Only;
+	src:url("fuentes/Skater Squad PersonalUseOnly.ttf");
+}
+
+@font-face{
+	font-family:Akira Expanded;
+	src:url("fuentes/Akira Expanded Demo.otf");
+}
+
+@font-face{
+	font-family:Styleturn DEMO;
+	src:url("fuentes/Styleturn-DEMO.otf");
+}
+
+@font-face{
+	font-family:SkateBoard Unlimited;
+	src:url("fuentes/Skate Board Unlimited.ttf");
+}
+
+body{
+	margin:0;
+	background-image: url(imagenes/fondopapel.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #f2f2f2;
+}
+
+header{
+	height:auto;
+	width:100%;
+	background-color:#212121;
+	display:flex;
+	/*alineación de los hijos: .logo ; nav*/
+	justify-content: space-evenly;
+	align-items: center;
+	box-shadow:0px 5px 10px #595757; 
+	margin-bottom:12px;
+}
+
+.log{
+	height:auto;
+	width:100%;
+	display:flex;
+	/*alineación del hijo: img*/
+	justify-content: center;
+	align-items: center;
+}
+
+.logo{
+	height:auto;
+	width:30%;
+	padding:16px;
+	display:flex;
+	/*alineación del hijo: img*/
+	justify-content: center;
+	align-items: center;
+}
+
+img{/*adaptamos al img a div*/
+	height:auto;
+	width:50%;
+}
+
+nav{
+	height:auto;
+	width:70%;
+	display:flex;
+	/*alineación de los hijos: links*/
+	justify-content: space-evenly;
+	align-items: center;
+	
+}
+
+.menu:link, .menu:visited{
+	font-family:Skatenow;
+	font-weight:bold; /*negrita*/
+	text-decoration:none; /*sin subrayado*/
+	color:white;
+	width:18%;
+	font-size:38px;
+	height:auto;
+	display:flex;
+	letter-spacing:1px;
+	/*alineación horizontal y vertical del texto*/
+	justify-content: center;
+	align-items: center;
+	/*borde del boton*/
+	border-radius:14px;
+	/*propiedad del hover*/
+	transition:background-color 0.5s;/*cuando paso el mouse anima las propiedades del hover*/
+}
+
+.menu:hover{
+	font-family:Skater Squad Personal Use Only;
+	color:#fcfcfc;
+	border-radius:20px;
+	background-color:#D3002F;
+	letter-spacing:1px;
+	height:10%;
+}
+
+main{
+	flex-direction: column;
+	height:auto;
+	width:100%;
+	display:flex;
+	/*alineación de los hijos: .texto ; .foto*/
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom:2%;
+}
+
+.caja{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	width:90%;
+	height:auto;
+	margin-bottom:20px;
+}
+
+.cajap{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	width:90%;
+	height:auto;
+	margin-bottom:20px;
+}
+
+h1{
+	font-family:Styleturn DEMO;
+	font-weight:bold;
+	font-size:57px;
+	letter-spacing:5px;
+	text-align:center;
+	height:auto;
+	width:100%;
+}
+
+h2 {
+	font-family:Akira Expanded;
+	letter-spacing:5px;
+	font-size:30px;
+	line-height:0.9;
+	text-align:left;
+	height:auto;
+	width:100%;
+}
+
+h3 {
+	font-family:SkateBoard Unlimited;
+	letter-spacing:5px;
+	font-size:37px;
+	height:auto;
+	width:100%;
+	
+}
+
+.texto{
+	height:auto;
+	width:55%;
+	display:flex;
+	/*alineación h1, parrafo*/
+	flex-wrap: wrap;
+	align-content:center;
+	align-items:center;
+	/*parrafo*/
+	font-family:Trebuchet MS;
+	font-size:20px;
+	font-weight:bold;
+	text-align:justify;
+	line-height:23px;
+	margin-left:1%;
+	margin-right:1%;
+	margin-top:0;
+}
+
+.foto{
+	height:auto;
+	width:40%;
+	display:flex;
+	border-radius:40px;
+}
+
+.imagen{
+	width:100%;
+	height:auto;
+	border-radius:35px;
+}
+
+.partes{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+footer{
+	height:auto;
+	width:100%;
+	background-color:#C00808;
+	padding:1px;
+	display:flex;
+	/*alineación de los hijos: .contacto ; .social*/
+	justify-content: space-around;
+	align-items: center;
+}
+
+.logo2{
+	height:auto;
+	width:30%;
+	display:flex;
+	/*alineación del hijo: img*/
+	justify-content: center;
+	align-items: center;
+}
+
+.contacto{
+	height:auto;
+	width:30%;
+	line-height:1px;
+	display:flex;
+	flex-wrap: wrap;
+	align-content:center;
+	align-items:center;
+	/*texto*/
+	font-family:Verdana;
+	font-size: 15px;
+	font-weight:Semi-bold;
+	text-align:justify;
+	line-height:19px;
+	margin-left:1%;
+	margin-right:1%;
+	margin-top:0;
+}
+
+.social{
+	height:auto;
+	width:30%;
+	display:flex;
+	justify-content: space-evenly;
+	align-items: center
+}
+
+.soc{
+	height:auto;
+	width:50%;
+	display:flex;
+	justify-content: space-evenly;
+	align-items: center
+}
+
+/*MediaQueries*/
+
+@media screen and (max-width:800px) /*Si el ancho de la pantalla es hasta 800px hago esto*/
+{
+	.logo{
+		width:100%;
+		height:auto;
+	}
+	
+	.logo2{
+		width:100%;
+		height:auto;
+	}
+	
+	header{
+		width:100%;
+		flex-direction:column;
+		align-items:center;
+	}
+	
+	nav{
+		flex-direction:column;
+		align-items:center;
+		font-size:25px;
+		padding:5px;
+	}
+	
+	.menu:hover{
+		font-size:25px;
+	}
+	
+	.menu:link{
+		width:100%;
+		height:auto;
+		padding:1%;
+	}
+	
+	main{
+		flex-direction:column;
+		align-items:center;
+	}
+	
+	.caja{
+		flex-direction:column-reverse;
+	}
+	
+	.cajap{
+		flex-direction:column;
+	}
+	
+	.foto{
+		width:90%;
+	}
+	
+	h1{
+		line-height:45px;
+	}
+	
+	.texto{
+		width:90%;
+	}
+	
+	footer{
+		flex-direction:column;
+		align-items:center;
+	}
+	
+	.contacto{
+		width:95%;
+		
+	}
+	
+	.social{
+		width:100%;
+		font-weight:bold;
+		font-size:50px;
+		padding:15px;
+	}
+	
+	.soc{
+		display:flex;
+		justify-content: center
+	}
+}
